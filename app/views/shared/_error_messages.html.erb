@@ -1,0 +1,9 @@
+<% if @user.errors.any? %>
+      Oops! This form contains <b><%= pluralize(@user.errors.count, "error") %></b>. Here is where you went wrong:
+    <ul>
+    <% @user.errors.full_messages.each do |msg| %>
+      <li><%= msg %></li>
+    <% end %>
+    </ul>
+    <p><b>Try again. We believe in you.</b></p>
+<% end %>

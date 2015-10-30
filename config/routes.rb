@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  get 'newuser' => 'users#new'
+  root 'users#new'
   resources :users
   
 end

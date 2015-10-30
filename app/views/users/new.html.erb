@@ -2,6 +2,7 @@
 <p>Please fill out the form below. All fields are required.</p>
 
     	<p><%= form_for(@user) do |f| %>
+    	  <%= render 'shared/error_messages' %>
       <%= f.label :first_name %>
       <%= f.text_field :first_name %></p>
 

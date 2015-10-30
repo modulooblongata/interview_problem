@@ -1,7 +1,8 @@
 <h2><%= @user.first_name %> <%= @user.last_name %></h2>
 <p><b>user id:</b> <%= @user.id %></p>
 <p><b>email address:</b> <%= @user.email %></p>
-
+<p><%= link_to "View Our Other Users", users_path %></p>
+<p><%= link_to "Make Another User", new_user_path %></p>
 
 <!-- All requests should respond with the user object with only the following fields: first_name, last_name, email, and id 
 There also needs to be a 'show' that responds with a specific user
